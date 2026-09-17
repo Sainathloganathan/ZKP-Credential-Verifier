@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ZKP Credential Verifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Zero-Knowledge Proof</h1>
+        <h2>Anonymous Credential Verifier</h2>
+
+        <p>
+            Prove eligibility without revealing your personal information.
+        </p>
+
+        <label>Private Age</label>
+        <input type="number" id="age" placeholder="Enter your age">
+
+        <label>Required Age</label>
+        <input type="number" id="minimumAge" value="18">
+
+        <button onclick="generateProof()">
+            Generate Proof
+        </button>
+
+        <div id="proofBox"></div>
+
+        <button onclick="verifyProof()">
+            Verify Eligibility
+        </button>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
